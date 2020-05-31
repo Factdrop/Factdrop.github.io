@@ -1,0 +1,227 @@
+{
+  "settings": {
+    "name": "My Site",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#00db53",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": true
+      },
+      "additionalSetColors": [
+        "#00db53"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "siteFonts": [
+      {
+        "css": "'Rubik', sans-serif",
+        "name": "Rubik",
+        "url": "https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i"
+      }
+    ],
+    "versionFirst": "4.7.6",
+    "uniqCompNum": 6,
+    "versionPublish": "4.12.3",
+    "imageResize": true,
+    "favicon": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Reports",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              }
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                }
+              }
+            },
+            ".mbr-gallery-item > div > span": {
+              "text-align": "center"
+            }
+          },
+          "_name": "gallery1",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#232323\">\n\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"4\" mbr-gallery-show-text></div>\n    </div>\n\n</section>",
+          "_cid": "s0wTOiNbB2",
+          "_anchor": "gallery1-3",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-7",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/-280x320.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/280x320-280x320.jpg",
+                "alt": "",
+                "title": "Το Καρτέλ του Δικομματισμού στην Ελλάδα",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://86013719-4951-4667-83b9-e5d9c24ab8c3.usrfiles.com/ugd/860137_2a6671ddbbe848699fa5356a88067c3b.pdf\"><b>Click to Read</b></a>",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/eu-migration-279x320.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/eu-migration-279x320-279x320.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://wixlabs-pdf-dev.appspot.com/assets/pdfjs/web/viewer.html?file=%2Fpdfproxy%3Finstance%3D_rhRpThXDruuATGGRuOi_EeXnzekZKwgzPMR8GGOQQk.eyJpbnN0YW5jZUlkIjoiZGZhYTcwMTUtM2Q5Ni00ZDkyLTgwNmMtMzRkNGZkNmFhNDJlIiwiYXBwRGVmSWQiOiIxM2VlMTBhMy1lY2I5LTdlZmYtNDI5OC1kMmY5ZjM0YWNmMGQiLCJtZXRhU2l0ZUlkIjoiMzMyYmY4MWMtMmNhNi00YTU4LTg2NGUtYjE0MjAzNmE5ZjJiIiwic2lnbkRhdGUiOiIyMDIwLTA1LTI4VDE3OjE4OjU5LjU3NVoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6IjVhZDIyNGYwLTc1ZDYtNDgyZi1iN2U0LTgyMTI0NzJiNzcyYSIsImJpVG9rZW4iOiJlYzgxODgwOS0xMTMwLTA3Y2EtMDYyMi04NTk2ZmUwMDNiMDUiLCJzaXRlT3duZXJJZCI6Ijg2MDEzNzE5LTQ5NTEtNDY2Ny04M2I5LWU1ZDljMjRhYjhjMyJ9%26compId%3Dcomp-k88xnvu2%26url%3Dhttps%3A%2F%2Fdocs.wixstatic.com%2Fugd%2F860137_81b59de142cf4bab9ae2f9c381a8793c.pdf#page=1&amp;links=true&amp;originalFileName=European%20Union%20and%20the%20Geopolitics%20of%20Mi&amp;locale=en&amp;allowDownload=true&amp;allowPrinting=true\"><b>Click to Read</b></a>",
+                "active": false
+              },
+              {
+                "tags": "Creative",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/eu-arab-280x320.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/eu-arab-280x320-280x320.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://wixlabs-pdf-dev.appspot.com/assets/pdfjs/web/viewer.html?file=%2Fpdfproxy%3Finstance%3DjUd088ZCE1kC0QX00TwowSPGa7PPI1irzPOjFWyjjcU.eyJpbnN0YW5jZUlkIjoiZGZhYTcwMTUtM2Q5Ni00ZDkyLTgwNmMtMzRkNGZkNmFhNDJlIiwiYXBwRGVmSWQiOiIxM2VlMTBhMy1lY2I5LTdlZmYtNDI5OC1kMmY5ZjM0YWNmMGQiLCJtZXRhU2l0ZUlkIjoiMzMyYmY4MWMtMmNhNi00YTU4LTg2NGUtYjE0MjAzNmE5ZjJiIiwic2lnbkRhdGUiOiIyMDIwLTA1LTA5VDEyOjI5OjQzLjAxMFoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6IjVhZDIyNGYwLTc1ZDYtNDgyZi1iN2U0LTgyMTI0NzJiNzcyYSIsImJpVG9rZW4iOiJlYzgxODgwOS0xMTMwLTA3Y2EtMDYyMi04NTk2ZmUwMDNiMDUiLCJzaXRlT3duZXJJZCI6Ijg2MDEzNzE5LTQ5NTEtNDY2Ny04M2I5LWU1ZDljMjRhYjhjMyJ9%26compId%3Dcomp-k88xr87h%26url%3Dhttps%3A%2F%2Fdocs.wixstatic.com%2Fugd%2F860137_49a04d9709204ed9be1e9a61b47599b1.pdf#page=1&amp;links=true&amp;originalFileName=Europe-s-Response-to-the-Arab-Awakenin-T&amp;locale=en&amp;allowDownload=true&amp;allowPrinting=true\"><b>Click to Read</b></a>",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/greek-cw-280x320.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/greek-cw-280x320-280x320.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://wixlabs-pdf-dev.appspot.com/assets/pdfjs/web/viewer.html?file=%2Fpdfproxy%3Finstance%3Djf9nueyTBso4QC6RQSUIGhOwI-CLHGD3dabv24pJPIY.eyJpbnN0YW5jZUlkIjoiZGZhYTcwMTUtM2Q5Ni00ZDkyLTgwNmMtMzRkNGZkNmFhNDJlIiwiYXBwRGVmSWQiOiIxM2VlMTBhMy1lY2I5LTdlZmYtNDI5OC1kMmY5ZjM0YWNmMGQiLCJtZXRhU2l0ZUlkIjoiMzMyYmY4MWMtMmNhNi00YTU4LTg2NGUtYjE0MjAzNmE5ZjJiIiwic2lnbkRhdGUiOiIyMDIwLTA1LTA4VDE4OjU1OjA3LjExNVoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6IjVhZDIyNGYwLTc1ZDYtNDgyZi1iN2U0LTgyMTI0NzJiNzcyYSIsImJpVG9rZW4iOiJlYzgxODgwOS0xMTMwLTA3Y2EtMDYyMi04NTk2ZmUwMDNiMDUiLCJzaXRlT3duZXJJZCI6Ijg2MDEzNzE5LTQ5NTEtNDY2Ny04M2I5LWU1ZDljMjRhYjhjMyJ9%26compId%3Dcomp-k88xnvu2%26url%3Dhttps%3A%2F%2Fdocs.wixstatic.com%2Fugd%2F860137_1cc77068547d448d96b8881798dc0ebd.pdf#page=1&amp;links=true&amp;originalFileName=Greek-Civil-War&amp;locale=en&amp;allowDownload=true&amp;allowPrinting=true\"><b>Click to Read</b></a>",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/boosting-d-280x320.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/boosting-d-280x320-280x320.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://wixlabs-pdf-dev.appspot.com/assets/pdfjs/web/viewer.html?file=%2Fpdfproxy%3Finstance%3Djf9nueyTBso4QC6RQSUIGhOwI-CLHGD3dabv24pJPIY.eyJpbnN0YW5jZUlkIjoiZGZhYTcwMTUtM2Q5Ni00ZDkyLTgwNmMtMzRkNGZkNmFhNDJlIiwiYXBwRGVmSWQiOiIxM2VlMTBhMy1lY2I5LTdlZmYtNDI5OC1kMmY5ZjM0YWNmMGQiLCJtZXRhU2l0ZUlkIjoiMzMyYmY4MWMtMmNhNi00YTU4LTg2NGUtYjE0MjAzNmE5ZjJiIiwic2lnbkRhdGUiOiIyMDIwLTA1LTA4VDE4OjU1OjA3LjExNVoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6IjVhZDIyNGYwLTc1ZDYtNDgyZi1iN2U0LTgyMTI0NzJiNzcyYSIsImJpVG9rZW4iOiJlYzgxODgwOS0xMTMwLTA3Y2EtMDYyMi04NTk2ZmUwMDNiMDUiLCJzaXRlT3duZXJJZCI6Ijg2MDEzNzE5LTQ5NTEtNDY2Ny04M2I5LWU1ZDljMjRhYjhjMyJ9%26compId%3Dcomp-k88u1xkc%26url%3Dhttps%3A%2F%2Fdocs.wixstatic.com%2Fugd%2F860137_4d8b23bdfe6b42d58c6c77d01aef9eca.pdf#page=1&amp;links=true&amp;originalFileName=Boosting-Democracy%20(1)&amp;locale=en&amp;allowDownload=true&amp;allowPrinting=true\"><b>Click to Read</b></a>",
+                "active": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
