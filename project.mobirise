@@ -6,7 +6,7 @@
       "name": "mobirise4",
       "title": "Mobirise 4",
       "styling": {
-        "primaryColor": "#232323",
+        "primaryColor": "#00db53",
         "secondaryColor": "#ff3366",
         "successColor": "#F7ED4A",
         "infoColor": "#82786E",
@@ -482,11 +482,11 @@
           "_name": "menu1",
           "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#c1c1c1\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#333333\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"https://mobirise.co\">\n                         <img src=\"@PROJECT_PATH@/assets/images/fateye.gif\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-danger\" data-app-selector=\".navbar-caption\" href=\"http://factdrop.blogspot.com/p/reports.html\" data-app-placeholder=\"Type Text\">\n                        FACTDROP</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"http://factdrop.blogspot.com/\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\"><span class=\"mbri-home mbr-iconfont mbr-iconfont-btn\" style=\"color: rgb(0, 219, 83);\"></span>\n                        \n                        Home</a>\n                </li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-black\" href=\"http://factdrop.blogspot.com/p/reports.html\" data-app-placeholder=\"Type Text\">\n                    Reports</a></div>\n        </div>\n    </nav>\n</section>",
           "_cid": "s0A5NIa8qM",
+          "_anchor": "menu1-6",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu1-6"
+          "_params": {}
         },
         {
           "alias": false,
@@ -642,6 +642,19 @@
                 "customStyle1": "display-7",
                 "caption": "<a href=\"https://wixlabs-pdf-dev.appspot.com/assets/pdfjs/web/viewer.html?file=%2Fpdfproxy%3Finstance%3Djf9nueyTBso4QC6RQSUIGhOwI-CLHGD3dabv24pJPIY.eyJpbnN0YW5jZUlkIjoiZGZhYTcwMTUtM2Q5Ni00ZDkyLTgwNmMtMzRkNGZkNmFhNDJlIiwiYXBwRGVmSWQiOiIxM2VlMTBhMy1lY2I5LTdlZmYtNDI5OC1kMmY5ZjM0YWNmMGQiLCJtZXRhU2l0ZUlkIjoiMzMyYmY4MWMtMmNhNi00YTU4LTg2NGUtYjE0MjAzNmE5ZjJiIiwic2lnbkRhdGUiOiIyMDIwLTA1LTA4VDE4OjU1OjA3LjExNVoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6IjVhZDIyNGYwLTc1ZDYtNDgyZi1iN2U0LTgyMTI0NzJiNzcyYSIsImJpVG9rZW4iOiJlYzgxODgwOS0xMTMwLTA3Y2EtMDYyMi04NTk2ZmUwMDNiMDUiLCJzaXRlT3duZXJJZCI6Ijg2MDEzNzE5LTQ5NTEtNDY2Ny04M2I5LWU1ZDljMjRhYjhjMyJ9%26compId%3Dcomp-k88u1xkc%26url%3Dhttps%3A%2F%2Fdocs.wixstatic.com%2Fugd%2F860137_4d8b23bdfe6b42d58c6c77d01aef9eca.pdf#page=1&amp;links=true&amp;originalFileName=Boosting-Democracy%20(1)&amp;locale=en&amp;allowDownload=true&amp;allowPrinting=true\" target=\"_blank\"><b>Click to Read</b></a>",
                 "active": true
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/rand-pdf-383x438.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/rand-pdf-383x438-383x438.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://wixlabs-pdf-dev.appspot.com/assets/pdfjs/web/viewer.html?file=%2Fpdfproxy%3Finstance%3Djf9nueyTBso4QC6RQSUIGhOwI-CLHGD3dabv24pJPIY.eyJpbnN0YW5jZUlkIjoiZGZhYTcwMTUtM2Q5Ni00ZDkyLTgwNmMtMzRkNGZkNmFhNDJlIiwiYXBwRGVmSWQiOiIxM2VlMTBhMy1lY2I5LTdlZmYtNDI5OC1kMmY5ZjM0YWNmMGQiLCJtZXRhU2l0ZUlkIjoiMzMyYmY4MWMtMmNhNi00YTU4LTg2NGUtYjE0MjAzNmE5ZjJiIiwic2lnbkRhdGUiOiIyMDIwLTA1LTA4VDE4OjU1OjA3LjExNVoiLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6IjVhZDIyNGYwLTc1ZDYtNDgyZi1iN2U0LTgyMTI0NzJiNzcyYSIsImJpVG9rZW4iOiJlYzgxODgwOS0xMTMwLTA3Y2EtMDYyMi04NTk2ZmUwMDNiMDUiLCJzaXRlT3duZXJJZCI6Ijg2MDEzNzE5LTQ5NTEtNDY2Ny04M2I5LWU1ZDljMjRhYjhjMyJ9%26compId%3Dcomp-k88u1xkc%26url%3Dhttps%3A%2F%2Fdocs.wixstatic.com%2Fugd%2F860137_4d8b23bdfe6b42d58c6c77d01aef9eca.pdf#page=1&amp;links=true&amp;originalFileName=Boosting-Democracy%20(1)&amp;locale=en&amp;allowDownload=true&amp;allowPrinting=true\" target=\"_blank\"><b>Click to Read</b></a>",
+                "active": false
               }
             ]
           }
